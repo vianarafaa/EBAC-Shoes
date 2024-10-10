@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #156ed4;
+    color: #fff;
+    padding: 1.5rem 1rem;
+    margin-bottom: 32px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container h1 {
+    font-weight: 700;
+}
+
+ul li {
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+main {
+    margin-bottom: 2rem;
+}
+
+.sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sobre img {
+    max-width: 100%;
+    padding-bottom: 32px;
+}
+
+h3 {
+    color: #156ed4;
+    font-size: 24px;
+    border-bottom: #156ed4 solid 2px;
+    padding-bottom: 1rem;
+}
+
+.descricao p {
+    padding-top: 2rem;
+    color: #494949;
+    padding-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+a img {
+    max-width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+h4 {
+    color: #111111;
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+.produtos p {
+    text-align: justify;
+    color: #494949;
+    font-size: 0.8rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+button {
+    background-color: #156ed4;
+    color: #f0f0f0;
+    width: 100%;
+    padding: 5px 0;
+}
+
+footer {
+    background-color: #156ed4;
+    padding: 1rem;
+    color: #f0f0f0;
+    text-align: center;
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    header ul {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .produtos ul {
+        display: grid;
+        grid-template-columns: repeat(2, 49%);
+        column-gap: 1%;
+    }
+
+    a img {
+        max-width: 100%;
+        padding-top: 0;
+        padding-bottom: 1rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        max-width: 1024px;
+    }
+
+    header ul {
+        display: flex;
+        gap: 1rem;
+    }
+
+    header li {
+        font-size: 1.5rem;
+    }
+
+    .sobre {
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .sobre img {
+        max-width: 30%;
+    }
+
+    .produtos ul {
+        display: grid;
+        grid-template-columns: repeat(4, 24%);
+        column-gap: 1%;
+    }
+    .produtos p {
+        text-align: justify;
+        font-size: 1rem;
+    }
+}
